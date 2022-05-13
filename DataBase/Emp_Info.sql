@@ -53,12 +53,12 @@ select name, role from emp_details;
 delete from emp_details where Emp_ID = 9;
 
 -- Update Data
-update emp_details set branch = 'DMM' where name = 'Bhanu Prakash';
+update emp_details set branch = 'Guntur' where name = 'Bhanu Prakash';
 update emp_details set branch = 'Pune', role = 'Java Developer' where name = 'Prathima';
 
 -- Create Columns
 alter table emp_details add column Phone_No int;
-alter table emp_details add column Phone_No int after Name;
+alter table emp_details add column Phone_No varchar(30) after Name;
 
 -- Update Data
 update emp_details set Phone_No = 916006505, role = 'Java' where Emp_ID =  1;
