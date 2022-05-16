@@ -1,5 +1,7 @@
 -- CRUD Operators
 
+show databases;
+
 create database test; -- Create Database
 use test;
 
